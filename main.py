@@ -1,16 +1,13 @@
 import os.path
-import tkinter
+from tkinter import Event, StringVar, BooleanVar
 import ttkbootstrap as ttk
 from ttkbootstrap.scrolled import ScrolledFrame
 from ttkbootstrap.constants import *
 from tkinter.filedialog import askdirectory, askopenfilename
 from functools import partial
 from ttkbootstrap.toast import ToastNotification
-from tkinter import StringVar
-from tkinter import BooleanVar
 from PortraitCreator import *
 from ParadoxUtils import *
-from ttkbootstrap import utility
 
 
 # Create the root tkkbootstrap window
@@ -224,7 +221,7 @@ class UtilityTool(ttk.Frame):
 
         self.inputDirs[tabIndex][directory] = currentFrame
 
-    def onEntryEnter(self, event: tkinter.Event, tabIndex: int):
+    def onEntryEnter(self, event: Event, tabIndex: int):
         """
         Handle the event when an entry widget receives an Enter key press
         :param event: The event object containing information about the key press
