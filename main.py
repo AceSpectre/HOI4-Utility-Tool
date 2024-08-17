@@ -1,4 +1,5 @@
 import os.path
+import traceback
 from tkinter import Event, StringVar, BooleanVar
 import ttkbootstrap as ttk
 from ttkbootstrap.scrolled import ScrolledFrame
@@ -325,8 +326,10 @@ class UtilityTool(ttk.Frame):
                     generatePortraits(path, UtilityTool.listImageFiles(path), self.filterDirectories[key].get(),
                                       targetPath,
                                       self.createAdvisors.get())
-        except:
+        except Exception as e:
             print("Generate Portraits failed")
+            print(f"An error occurred: {e}")
+            traceback.print_exc()
             return False
 
     def generateFocusIcon(self):
