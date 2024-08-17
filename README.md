@@ -28,3 +28,8 @@ English localisation files can be created using any of the following as localisa
 
 Default localisation text removes the underscores and capitalises the first letter of each word
 - For example: `recruit_ryan_gosling` becomes `"Recruit Ryan Gosling"`
+
+# Credits
+
+All image assets (focus frames and character backgrounds/advisor frames) from [Globvs' Ultimate-HOI4-GFX repository](https://github.com/Globvs/Ultimate-HOI4-GFX).
+The "generate focus icon" tab is designed to specifically work with the .pdn files from this repository. 
